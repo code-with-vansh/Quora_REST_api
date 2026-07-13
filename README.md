@@ -1,4 +1,4 @@
-## Quora REST API CRUD
+# Quora REST API CRUD
 
 A Quora-inspired CRUD application built with **Node.js**,
 **Express.js**, and **EJS** to learn RESTful APIs and server-side
@@ -6,7 +6,7 @@ rendering.
 
 ## 📸 Preview
 
-> Add screenshots or GIFs here after uploading to GitHub.
+![Home](./screenshots/home.png)
 
 ------------------------------------------------------------------------
 
@@ -37,17 +37,20 @@ rendering.
 ## 📂 Project Structure
 
 ``` text
-.
+Quora_REST_api
 ├── public/
-│   ├── css/
-│   └── ...
+│   ├── style.css
+│   └── theme.js
 ├── views/
 │   ├── index.ejs
 │   ├── new.ejs
 │   ├── edit.ejs
 │   ├── show.ejs
+│   ├── delete.ejs
 │   └── partials/
-├── routes/ (if applicable)
+|       └── navbar.ejs
+├── posts/
+│   └── posts.js
 ├── index.js
 ├── package.json
 ├── package-lock.json
@@ -62,8 +65,8 @@ rendering.
 ## 🚀 Installation
 
 ``` bash
-git clone https://github.com/<your-username>/quora-rest-api.git
-cd quora-rest-api
+git clone https://github.com/code-with-vansh/Quora_REST_api.git
+cd Quora_REST_api
 npm install
 npm start
 ```
@@ -88,6 +91,7 @@ all posts.
 
 ## 🌐 REST Endpoints
 
+``` text
   Method   Endpoint          Purpose
   -------- ----------------- ---------------
   GET      /posts            List posts
@@ -97,6 +101,7 @@ all posts.
   GET      /posts/:id/edit   Edit form
   PATCH    /posts/:id        Update post
   DELETE   /posts/:id        Delete post
+```
 
 ## 📚 What I Learned
 
